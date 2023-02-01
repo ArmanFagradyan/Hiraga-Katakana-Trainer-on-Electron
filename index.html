@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" />
+    <meta
+        http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+        http-equiv="X-Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'"
+    />
+    <title>Kana Trainer</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <a href="./list.html">List of letters</a>
+    <div class="wrapper">
+        <div class="content__container">
+        <h1>Kana Trainer</h1>
+        <div class="button__container">
+            <button class="btn" id="hiragana-button">Hiragana</button>
+            <button class="btn" id="katakana-button">Katakana</button>
+        </div>
+        <div class="character__container">
+            <div class="character" id="character-container"></div>
+            <div id="pronounciation"></div>
+        </div>
+        <p>Type the character's pronounciation:</p>
+        <form id="form">
+        <input type="text" class="input" id="answer" autocomplete="off">
+        </form>
+        <p id="result"></p>
+        </div>
+    </div>
+    </body>
+    <script src="./renderer.js"></script>
+    <script src="./script.js"></script>
+</html>

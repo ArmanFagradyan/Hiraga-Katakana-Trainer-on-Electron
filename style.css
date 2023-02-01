@@ -1,0 +1,116 @@
+body {
+    background-color: #517879;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    transform: translate(-50%, -50%);
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+}
+
+.content__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.character__container {
+    
+    width: 270px;
+    height: 350px;
+    background-color: #1e3e57;
+    border: #14354e solid 35px;
+    border-radius: 25px;
+    
+}
+
+#pronounciation {
+    display: none;
+}
+#character-container:hover + #pronounciation {
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.character {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 140px;
+    color: rgb(0, 0, 0);
+
+}
+
+.button__container {
+    padding-bottom: 40px;
+}
+
+.btn {
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #8b73e3;
+    min-width: 120px;
+    display: inline-flex;
+    height: 37px;
+    padding: 0px 15px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    outline: 0;
+    border: 1px;
+    /* border-radius: 3px; */
+}
+
+.input {
+    text-align: center;
+    font-size: 18px;
+    width: 100px;
+    padding: 7px 0;
+    outline: 0;
+    border: 0;
+    font-size: 15px;
+    font-family: inherit;
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(92, 50, 50);
+    background-color: #33414d;
+}
+
+input[type="text"]
+{
+    font-size:24px;
+}
+
+.table__wrapper {
+    transform: translate(-50%, -50%);
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+}
+
+.table__wrapper:first-child {
+    margin-top: 25px;
+}
+
+.kana__image {
+    pointer-events: none;
+    user-select: none;
+}
